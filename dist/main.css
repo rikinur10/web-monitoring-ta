@@ -1,0 +1,116 @@
+.navbar-brand--img { height: 50px; }
+
+.badge-notif { position: absolute; top: 1.2rem; margin-left: .7em; }
+
+.sidebar {
+    display: flex; /* Mengatur sidebar menjadi flex container */
+    flex-direction: column; /* Mengatur arah tata letak flex menjadi kolom */
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    height: 100%; /* Mengatur tinggi sidebar agar mengisi tinggi parent (kelas row) */
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+.sidebar .nav-link { font-weight: 300; color: #333; position: relative; display: block; padding: .5em 1em; text-decoration: none; }
+
+.sidebar .nav-link.active {
+    color: #387ADF;
+    border-left: 3px solid #387ADF;
+    transition: color 0.3s ease, border-left 0.3s ease; /* Menambahkan transisi */
+}
+
+/* Optional: Hover effect */
+.sidebar .nav-link:hover {
+    color: #387ADF;
+    transition: color 0.3s ease;
+}
+
+
+.sidebar-heading { padding: 1rem; margin-top: 1rem; background-color: #eee; color: #7d7a7a; }
+.sidebar-text {
+    margin-left: 200px; /* Atur margin kiri untuk teks agar mengikuti lebar sidebar heading */
+}
+
+.nav .nav { padding-left: 1em; background-color: #eee; display: none; }
+
+.nav .caret { -webkit-transition: transform 0.3s; -webkit-transition: -webkit-transform 0.3s; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
+
+.nav .active .caret { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+/* Dashboard */
+.card-body h3 { font-size: 2.5rem; }
+
+.card-footer { color: #ffffff; text-decoration: none; }
+
+.card-footer:hover { color: #ffffff; text-decoration: none; }
+
+.card-collapsible .card-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.card-collapsible .caret { -webkit-transition: transform 0.3s; -webkit-transition: -webkit-transform 0.3s; transition: -webkit-transform 0.3s; transition: transform 0.3s; transition: transform 0.3s, -webkit-transform 0.3s; }
+
+.card-collapsible .active { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+/* Menghapus outline pada card */
+.card { border: none; }
+
+.flex-container {
+    display: flex;
+  }
+  
+  .flex-container > .card {
+    flex: 1; /* Memiliki lebar yang sama */
+    margin-right: 10px; /* Margin antara setiap card */
+  }
+
+  /* Atur efek transisi */
+.animated-link {
+    transition: color 0.3s ease; /* Atur efek transisi untuk warna teks */
+}
+
+/* Atur warna teks normal */
+.animated-link {
+    color: black; /* Ganti warna teks normal */
+}
+
+/* Atur warna teks saat dihover */
+.animated-link:hover {
+    color: blue; /* Ganti warna teks saat dihover */
+}
+
+/* Style untuk tautan navigasi aktif */
+.nav-link.active {
+    font-weight: bold;
+}
+
+.table thead {
+    background: linear-gradient(to left, #5356FF, #378CE7);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.table-container {
+    overflow-x: auto; /* Memberikan scrolling horizontal jika konten melebihi lebar container */
+    overflow-y: auto;
+    width: 50%;
+    max-width: 100%; /* Membatasi lebar maksimum tabel sesuai container */
+    text-align: center;
+}
+
+body {
+    background-image: url('img/curved-11.jpg');
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran halaman */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+    background-attachment: fixed; /* Membuat gambar tetap di tempat saat halaman digulir */
+  }
+.clickable-card {
+    cursor: pointer;
+}
+
+
